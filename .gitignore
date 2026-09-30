@@ -1,0 +1,20 @@
+# Private development notes
+CLAUDE.md
+claude.md
+
+# OS / editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Word lock files and the editable resume source (publish resume/resume.pdf instead)
+~$*
+/*.docx
+
+# Original media files in the project root.
+# The site uses the copies in assets/, so these stay local and aren't committed twice.
+/FileFinder.png
+/image.jpeg
+/*.MOV
+/resume26.pdf
+/*.mov

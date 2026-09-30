@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senghakheng | Software &amp; Embedded Systems Portfolio</title>
+  <meta name="description" content="Computer Science student portfolio featuring software engineering, embedded systems, Python, C++, Raspberry Pi, and desktop application projects.">
+  <meta name="author" content="Senghakheng">
+
+  <!-- Open Graph (used when the link is shared) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Senghakheng | Software &amp; Embedded Systems Portfolio">
+  <meta property="og:description" content="Computer Science student portfolio featuring software engineering, embedded systems, Python, C++, Raspberry Pi, and desktop application projects.">
+  <meta property="og:image" content="assets/images/file-finder.png">
+
+  <meta name="color-scheme" content="dark light">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Apply a saved light/dark preference before the page paints (avoids a flash) -->
+  <script>
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    } catch (e) { /* storage unavailable: keep the dark default */ }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Navigation ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="nav-brand" href="#home">Senghakheng</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="nav-github" href="https://github.com/howlikeyl" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">
+            <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+            <!-- Sun icon (shown in dark mode) -->
+            <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <!-- Moon icon (shown in light mode) -->
+            <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Home / Hero ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Software Engineering · Embedded Systems</p>
+          <h1>Hi, I'm Senghakheng</h1>
+          <p class="hero-subtitle">Computer Science Student &amp; Developer</p>
+          <p class="hero-intro">
+            I am a Computer Science student interested in software engineering, embedded systems,
+            and building practical applications that combine software with real-world problem solving.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="#projects">View My Projects</a>
+            <a class="btn btn-secondary" href="https://github.com/howlikeyl" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="resume/resume.pdf" target="_blank" rel="noopener">View Resume</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Quick facts">
+          <dl class="facts">
+            <div>
+              <dt>Studying</dt>
+              <dd>B.S. Computer Science, Minor in Mathematics<br><span class="muted">University of Massachusetts Lowell</span></dd>
+            </div>
+            <div>
+              <dt>Working</dt>
+              <dd>Test Operator (ICT/FCT)<br><span class="muted">Mack Technology</span></dd>
+            </div>
+            <div>
+              <dt>Building with</dt>
+              <dd>Python · C++ · Raspberry Pi · Arduino</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2 class="section-title"><span class="section-index">01</span> About</h2>
+        <p>
+          I'm a Computer Science undergraduate at the University of Massachusetts Lowell, with a minor in Mathematics.
+          I enjoy software engineering and embedded systems, especially projects where code meets hardware.
+        </p>
+        <p>
+          Most of my work is in Python and C++. I've built projects on Raspberry Pi and Arduino, and I like
+          building practical applications, from desktop tools to robots, that solve a real problem
+          and bring software and hardware together.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-index">02</span> Projects</h2>
+        <p class="section-lead">A selection of things I've built. Open a project to see features and demos.</p>
+
+        <div class="project-grid">
+
+          <!-- Project 1: Picar Robot -->
+          <article class="project-card reveal">
+            <button class="project-media media-button" type="button" data-open-dialog="dialog-picar" aria-label="Watch Picar Robot demo videos">
+              <img src="assets/posters/picar-web-controller.jpg" alt="Picar Robot driving across a wooden floor while being controlled from a tablet" width="848" height="464" loading="lazy" class="media-cover">
+              <span class="media-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+                3 demo videos
+              </span>
+            </button>
+            <div class="project-body">
+              <h3>Picar Robot</h3>
+              <p>A Raspberry Pi-powered robot with voice interaction, remote web control, live camera streaming, and autonomous obstacle avoidance.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Python</li><li>Flask</li><li>Raspberry Pi</li><li>Linux</li><li>JavaScript</li><li>Gemini API</li>
+              </ul>
+              <div class="button-row">
+                <button class="btn btn-primary btn-sm" type="button" data-open-dialog="dialog-picar">Watch Demos</button>
+                <!-- GitHub: Picar Robot repository -->
+                <a class="btn btn-secondary btn-sm" href="https://github.com/howlikeyl/Picarx_robot" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: File Finder -->
+          <article class="project-card reveal">
+            <button class="project-media media-button" type="button" data-lightbox="assets/images/file-finder.png" data-lightbox-alt="File Finder desktop app showing ranked search results with highlighted matching words" aria-label="Enlarge File Finder screenshot">
+              <img src="assets/images/file-finder.png" alt="File Finder desktop app showing ranked search results with highlighted matching words" width="2880" height="1800" loading="lazy">
+              <span class="media-badge">Click to enlarge</span>
+            </button>
+            <div class="project-body">
+              <h3>File Finder</h3>
+              <p>Desktop application that finds local files by searching inside their contents instead of requiring users to remember filenames or locations.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Python</li><li>PySide6</li><li>SQLite</li><li>FTS5</li><li>PyMuPDF</li>
+              </ul>
+              <div class="button-row">
+                <button class="btn btn-primary btn-sm" type="button" data-open-dialog="dialog-filefinder">View Project</button>
+                <!-- GitHub: File Finder repository -->
+                <a class="btn btn-secondary btn-sm" href="https://github.com/howlikeyl/File_Finder" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: PingPong Game -->
+          <article class="project-card reveal">
+            <div class="project-media">
+              <video controls preload="none" playsinline poster="assets/posters/pingpong-demo.jpg" width="464" height="848" aria-label="PingPong Game demo video">
+                <source src="assets/videos/pingpong-demo.mov" type="video/mp4">
+                Your browser can't play this video. <a href="assets/videos/pingpong-demo.mov">Download the PingPong demo</a>.
+              </video>
+            </div>
+            <div class="project-body">
+              <h3>PingPong Game</h3>
+              <p>A two-player Pong-style game built on the Arduino UNO R4 WiFi LED matrix with physical button controls.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>C++</li><li>Arduino UNO R4 WiFi</li><li>Arduino IDE</li><li>LED Matrix</li><li>Embedded Systems</li>
+              </ul>
+              <div class="button-row">
+                <button class="btn btn-primary btn-sm" type="button" data-open-dialog="dialog-pingpong">View Project</button>
+                <!-- GitHub: PingPong Game repository -->
+                <a class="btn btn-secondary btn-sm" href="https://github.com/howlikeyl/Arduino_practice/tree/main/PingPongGame" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Sokoban Game -->
+          <article class="project-card reveal">
+            <button class="project-media media-button" type="button" data-lightbox="assets/images/sokoban.jpeg" data-lightbox-alt="Sokoban game window showing the player, crates, stone walls, a move counter, and a win message" aria-label="Enlarge Sokoban screenshot">
+              <img src="assets/images/sokoban.jpeg" alt="Sokoban game window showing the player, crates, stone walls, a move counter, and a win message" width="773" height="580" loading="lazy">
+              <span class="media-badge">Click to enlarge</span>
+            </button>
+            <div class="project-body">
+              <h3>Sokoban Game</h3>
+              <p>A graphical Sokoban puzzle game built in C++ using object-oriented programming and SFML.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>C++</li><li>SFML</li><li>Boost</li>
+              </ul>
+              <div class="button-row">
+                <button class="btn btn-primary btn-sm" type="button" data-open-dialog="dialog-sokoban">View Project</button>
+                <!-- GitHub: Sokoban Game repository -->
+                <a class="btn btn-secondary btn-sm" href="https://github.com/howlikeyl/Sokoban_game" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- More Projects: smaller cards below the featured projects -->
+        <div class="more-projects">
+          <h3 class="more-projects-title">More Projects</h3>
+
+          <!-- Friend Notes -->
+          <article class="mini-project reveal">
+            <button class="mini-project-media media-button" type="button" data-lightbox="assets/images/friend-notes.jpg" data-lightbox-alt="Friend Notes Tkinter main menu with Friends, Friend Requests, Received Notes, Sent Notes, Send Note, and Logout buttons" aria-label="Enlarge Friend Notes screenshot">
+              <img src="assets/images/friend-notes.jpg" alt="Friend Notes Tkinter main menu with Friends, Friend Requests, Received Notes, Sent Notes, Send Note, and Logout buttons" width="1280" height="800" loading="lazy">
+            </button>
+            <div class="mini-project-body">
+              <h4>Friend Notes</h4>
+              <p>A Python desktop and terminal application that lets friends securely exchange private notes, manage friend requests, and track messages.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Python</li><li>Tkinter</li><li>JSON</li><li>unittest</li>
+              </ul>
+              <div class="button-row">
+                <button class="btn btn-primary btn-sm" type="button" data-open-dialog="dialog-friendnotes">View Details</button>
+                <!-- GitHub: Friend Notes repository folder -->
+                <a class="btn btn-secondary btn-sm" href="https://github.com/howlikeyl/AI_Agent_with_claude_code/tree/main/Friend_Notes" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section id="experience" class="section">
+      <div class="container narrow">
+        <h2 class="section-title"><span class="section-index">03</span> Experience</h2>
+
+        <article class="experience-card reveal">
+          <header class="experience-header">
+            <div>
+              <h3>Test Operator (ICT/FCT)</h3>
+              <p class="experience-company">Mack Technology · Westford, Massachusetts</p>
+            </div>
+            <p class="experience-date">February 2026 – Present</p>
+          </header>
+          <ul class="experience-list">
+            <li>Flashed firmware onto PCBs using programming scripts</li>
+            <li>Tested and validated PCBs using In-Circuit Testing (ICT)</li>
+            <li>Performed Functional Circuit Testing (FCT)</li>
+            <li>Debugged hardware failures using test outputs</li>
+            <li>Collaborated with engineers to diagnose defects</li>
+            <li>Retested systems after troubleshooting</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-index">04</span> Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Programming Languages</h3>
+            <ul class="tags">
+              <li>Python</li><li>C++</li><li>SQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Software / Frameworks</h3>
+            <ul class="tags">
+              <li>Flask</li><li>PySide6</li><li>SQLite</li><li>SFML</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Embedded Systems</h3>
+            <ul class="tags">
+              <li>Raspberry Pi</li><li>Arduino</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Development Tools</h3>
+            <ul class="tags">
+              <li>Git</li><li>GitHub</li><li>VS Code</li><li>IntelliJ</li><li>Arduino IDE</li><li>Jupyter Notebook</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Operating Systems</h3>
+            <ul class="tags">
+              <li>Linux / Ubuntu</li><li>Windows</li><li>macOS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Resume ============ -->
+    <section id="resume" class="section">
+      <div class="container narrow">
+        <h2 class="section-title"><span class="section-index">05</span> Resume</h2>
+        <div class="resume-card reveal">
+          <div>
+            <h3>Resume (PDF)</h3>
+            <p class="muted">Education, projects, skills, and experience on one page.</p>
+          </div>
+          <div class="button-row">
+            <!-- Resume file: resume/resume.pdf -->
+            <a class="btn btn-primary" href="resume/resume.pdf" target="_blank" rel="noopener">View Resume</a>
+            <a class="btn btn-secondary" href="resume/resume.pdf" download="Senghakheng-Resume.pdf">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2 class="section-title"><span class="section-index">06</span> Contact</h2>
+        <p class="section-lead">I'm open to internship and co-op opportunities. Email is the best way to reach me.</p>
+
+        <ul class="contact-list">
+          <li class="contact-item reveal">
+            <span class="contact-label">Email</span>
+            <a href="mailto:senghak_heng@student.uml.edu">senghak_heng@student.uml.edu</a>
+          </li>
+          <li class="contact-item reveal">
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/howlikeyl" target="_blank" rel="noopener noreferrer">github.com/howlikeyl</a>
+          </li>
+          <li class="contact-item reveal">
+            <span class="contact-label">LinkedIn</span>
+            <!-- LinkedIn profile -->
+            <a href="https://www.linkedin.com/in/senghakheng" target="_blank" rel="noopener noreferrer" data-linkedin>LinkedIn profile</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Senghakheng</p>
+      <p class="footer-links">
+        <a href="https://github.com/howlikeyl" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <!-- LinkedIn profile -->
+        <a href="https://www.linkedin.com/in/senghakheng" target="_blank" rel="noopener noreferrer" data-linkedin>LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="mailto:senghak_heng@student.uml.edu">Email</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       Project detail dialogs (opened by buttons with data-open-dialog)
+       ================================================================= -->
+
+  <!-- Picar Robot details -->
+  <dialog class="modal" id="dialog-picar" aria-labelledby="dialog-picar-title">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" data-close-dialog aria-label="Close Picar Robot details">&times;</button>
+      <h2 id="dialog-picar-title">Picar Robot</h2>
+      <p>A Raspberry Pi-powered robot with voice interaction, remote web control, live camera streaming, and autonomous obstacle avoidance.</p>
+      <ul class="tags" aria-label="Technologies">
+        <li>Python</li><li>Flask</li><li>Raspberry Pi</li><li>Linux</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Gemini API</li>
+      </ul>
+
+      <h3>Demos</h3>
+      <div class="demo-gallery">
+        <figure class="demo">
+          <video controls preload="none" playsinline poster="assets/posters/picar-web-controller.jpg" width="848" height="464">
+            <source src="assets/videos/picar-web-controller.mov" type="video/mp4">
+            <a href="assets/videos/picar-web-controller.mov">Download the Web Controller demo</a>
+          </video>
+          <figcaption><strong>Web Controller</strong>Driving the robot from a browser over Wi-Fi.</figcaption>
+        </figure>
+        <figure class="demo">
+          <video controls preload="none" playsinline poster="assets/posters/picar-movement.jpg" width="464" height="848">
+            <source src="assets/videos/picar-movement.mov" type="video/mp4">
+            <a href="assets/videos/picar-movement.mov">Download the Robot Movement demo</a>
+          </video>
+          <figcaption><strong>Robot Movement</strong>The robot driving and turning.</figcaption>
+        </figure>
+        <figure class="demo">
+          <video controls preload="none" playsinline poster="assets/posters/picar-voice-assistant.jpg" width="464" height="848">
+            <source src="assets/videos/picar-voice-assistant.mov" type="video/mp4">
+            <a href="assets/videos/picar-voice-assistant.mov">Download the Voice Assistant demo</a>
+          </video>
+          <figcaption><strong>Voice Assistant</strong>Answering a spoken question with the Gemini API and text-to-speech.</figcaption>
+        </figure>
+      </div>
+
+      <h3>Key Features</h3>
+      <ul class="feature-list">
+        <li>Voice assistant using speech-to-text</li>
+        <li>Gemini API integration</li>
+        <li>Text-to-speech responses</li>
+        <li>Flask REST API</li>
+        <li>Web-based driving controls</li>
+        <li>Live MJPEG camera streaming</li>
+        <li>Ultrasonic obstacle detection</li>
+        <li>Autonomous obstacle avoidance</li>
+        <li>Runs on a Raspberry Pi Zero 2 W</li>
+        <li>Linux development and debugging</li>
+        <li>Hardware/software integration</li>
+      </ul>
+
+      <div class="button-row">
+        <!-- GitHub: Picar Robot repository -->
+        <a class="btn btn-primary" href="https://github.com/howlikeyl/Picarx_robot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- File Finder details -->
+  <dialog class="modal" id="dialog-filefinder" aria-labelledby="dialog-filefinder-title">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" data-close-dialog aria-label="Close File Finder details">&times;</button>
+      <h2 id="dialog-filefinder-title">File Finder</h2>
+      <p>A privacy-focused desktop search application that allows users to find files by searching for words inside them instead of remembering filenames or locations.</p>
+      <ul class="tags" aria-label="Technologies">
+        <li>Python</li><li>PySide6</li><li>SQLite</li><li>FTS5</li><li>PyMuPDF</li>
+      </ul>
+
+      <button class="modal-figure media-button" type="button" data-lightbox="assets/images/file-finder.png" data-lightbox-alt="File Finder desktop app showing ranked search results with highlighted matching words" aria-label="Enlarge File Finder screenshot">
+        <img src="assets/images/file-finder.png" alt="File Finder desktop app showing ranked search results with highlighted matching words" width="2880" height="1800" loading="lazy">
+      </button>
+
+      <h3>Key Features</h3>
+      <ul class="feature-list">
+        <li>Searches TXT, PDF, and DOCX files</li>
+        <li>Recursive folder scanning</li>
+        <li>Local SQLite database</li>
+        <li>SQLite FTS5 full-text search</li>
+        <li>BM25 relevance ranking</li>
+        <li>Highlighted search results</li>
+        <li>Incremental indexing</li>
+        <li>Background indexing</li>
+        <li>PySide6 desktop interface</li>
+        <li>Standalone macOS application</li>
+      </ul>
+
+      <div class="button-row">
+        <!-- GitHub: File Finder repository -->
+        <a class="btn btn-primary" href="https://github.com/howlikeyl/File_Finder" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- PingPong Game details -->
+  <dialog class="modal" id="dialog-pingpong" aria-labelledby="dialog-pingpong-title">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" data-close-dialog aria-label="Close PingPong Game details">&times;</button>
+      <h2 id="dialog-pingpong-title">PingPong Game</h2>
+      <p>A two-player Pong-style game built on the Arduino UNO R4 WiFi LED matrix with physical button controls.</p>
+      <ul class="tags" aria-label="Technologies">
+        <li>C++</li><li>Arduino UNO R4 WiFi</li><li>Arduino IDE</li><li>LED Matrix</li><li>Embedded Systems</li>
+      </ul>
+
+      <div class="modal-split">
+        <figure class="demo demo-portrait">
+          <video controls preload="none" playsinline poster="assets/posters/pingpong-demo.jpg" width="464" height="848">
+            <source src="assets/videos/pingpong-demo.mov" type="video/mp4">
+            <a href="assets/videos/pingpong-demo.mov">Download the PingPong demo</a>
+          </video>
+          <figcaption><strong>Gameplay Demo</strong>Two players on the Arduino LED matrix.</figcaption>
+        </figure>
+        <div>
+          <h3>Key Features</h3>
+          <ul class="feature-list feature-list-single">
+            <li>Real-time ball movement</li>
+            <li>Ball physics</li>
+            <li>Collision detection</li>
+            <li>Physical button controls</li>
+            <li>Paddle movement</li>
+            <li>Independent player and ball speeds</li>
+            <li>LED matrix rendering</li>
+            <li>Intro screen</li>
+            <li>Game-over screen</li>
+            <li>ArduinoGraphics integration</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="button-row">
+        <!-- GitHub: PingPong Game repository -->
+        <a class="btn btn-primary" href="https://github.com/howlikeyl/Arduino_practice/tree/main/PingPongGame" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Sokoban Game details -->
+  <dialog class="modal" id="dialog-sokoban" aria-labelledby="dialog-sokoban-title">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" data-close-dialog aria-label="Close Sokoban Game details">&times;</button>
+      <h2 id="dialog-sokoban-title">Sokoban Game</h2>
+      <p>A graphical Sokoban puzzle game built in C++ using object-oriented programming and SFML.</p>
+      <ul class="tags" aria-label="Technologies">
+        <li>C++</li><li>SFML</li><li>Boost</li>
+      </ul>
+
+      <button class="modal-figure media-button" type="button" data-lightbox="assets/images/sokoban.jpeg" data-lightbox-alt="Sokoban game window showing the player, crates, stone walls, a move counter, and a win message" aria-label="Enlarge Sokoban screenshot">
+        <img src="assets/images/sokoban.jpeg" alt="Sokoban game window showing the player, crates, stone walls, a move counter, and a win message" width="773" height="580" loading="lazy">
+      </button>
+
+      <h3>Key Features</h3>
+      <ul class="feature-list">
+        <li>Graphical gameplay using SFML</li>
+        <li>Object-oriented design</li>
+        <li>Keyboard controls</li>
+        <li>Undo and redo</li>
+        <li>Move-history stacks</li>
+        <li>Level loading</li>
+        <li>Stream operator overloading</li>
+        <li>Boost unit testing</li>
+        <li>Edge-case testing</li>
+      </ul>
+
+      <div class="button-row">
+        <!-- GitHub: Sokoban Game repository -->
+        <a class="btn btn-primary" href="https://github.com/howlikeyl/Sokoban_game" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Friend Notes details -->
+  <dialog class="modal" id="dialog-friendnotes" aria-labelledby="dialog-friendnotes-title">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" data-close-dialog aria-label="Close Friend Notes details">&times;</button>
+      <h2 id="dialog-friendnotes-title">Friend Notes</h2>
+      <p>A Python desktop and terminal application that lets friends securely exchange private notes, manage friend requests, and track messages.</p>
+      <ul class="tags" aria-label="Technologies">
+        <li>Python</li><li>Tkinter</li><li>JSON</li><li>unittest</li>
+      </ul>
+
+      <figure class="demo">
+        <video controls preload="none" playsinline poster="assets/posters/friend-notes-demo.jpg" width="1600" height="1000">
+          <source src="assets/videos/friend-notes-demo.mp4" type="video/mp4">
+          <a href="assets/videos/friend-notes-demo.mp4">Download the Friend Notes demo</a>
+        </video>
+        <figcaption><strong>App Walkthrough</strong>The Tkinter GUI: creating an account, friend requests, and exchanging notes.</figcaption>
+      </figure>
+
+      <h3>Architecture</h3>
+      <p class="muted">The project separates the user interface, application logic, and data persistence. The CLI and Tkinter GUI share the same backend logic.</p>
+      <ol class="flow" aria-label="Architecture flow">
+        <li>gui.py</li>
+        <li>backend.py</li>
+        <li>main.py</li>
+        <li>data.json</li>
+      </ol>
+
+      <h3>Key Features</h3>
+      <ul class="feature-list">
+        <li>Account registration and login</li>
+        <li>Salted and hashed passwords using PBKDF2-HMAC-SHA256</li>
+        <li>Friend request system</li>
+        <li>Accept and decline friend requests</li>
+        <li>Block and unblock users</li>
+        <li>Send and receive private notes</li>
+        <li>Read/unread message tracking</li>
+        <li>Important/flagged notes</li>
+        <li>Reply to notes</li>
+        <li>Per-user note deletion</li>
+        <li>Tkinter desktop GUI</li>
+        <li>Command-line interface</li>
+        <li>Local JSON data storage</li>
+        <li>Unit testing with unittest</li>
+      </ul>
+
+      <div class="button-row">
+        <!-- GitHub: Friend Notes repository folder -->
+        <a class="btn btn-primary" href="https://github.com/howlikeyl/AI_Agent_with_claude_code/tree/main/Friend_Notes" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Image lightbox (larger view of screenshots) -->
+  <dialog class="lightbox" id="lightbox" aria-label="Enlarged screenshot">
+    <button class="modal-close" type="button" data-close-dialog aria-label="Close enlarged image">&times;</button>
+    <img src="" alt="">
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
