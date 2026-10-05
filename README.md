@@ -56,4 +56,4 @@ The site is fully static and can be hosted on GitHub Pages:
 1. Push this folder to a GitHub repository (for example `howlikeyl.github.io` or `portfolio`).
 2. In the repository, go to **Settings → Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
-4. After a minute the site will be live at `https://howlikeyl.github.io/` (or `https://howlikeyl.github.io/portfolio/`).
+4. After a minute the site will be live at `https://howlikeyl.github.io/` (or `https://howlikeyl.github.io/Portfolio/`).
